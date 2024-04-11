@@ -5,3 +5,4 @@
 *.editorconfig
 *.props
 *.cs
+*.bin
