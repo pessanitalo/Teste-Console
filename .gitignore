@@ -1,0 +1,7 @@
+
+*.vsidx
+*.dll
+*.cache
+*.editorconfig
+*.props
+*.cs
