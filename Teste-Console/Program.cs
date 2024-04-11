@@ -1,24 +1,40 @@
-﻿using Teste_Console.Context;
+﻿using Newtonsoft.Json;
+using Teste_Console.Context;
+using Teste_Console.Models;
 
 var context = new DataContext();
 
 var cidades = context.Cidades.ToList();
+
+List<string> minhaLista = new List<string>();
+minhaLista.Add("Dado 1");
+minhaLista.Add("Dado 2");
+minhaLista.Add("Dado 3");
 foreach (var produto in cidades)
 {
-    Console.WriteLine($"Cidades: {produto.Cidades}");
+	Console.WriteLine($"Cidades: {produto.Cidades}");
 }
 
-var arq1 = @"C:\Users\italo pessan\Desktop\Projeto\arquivo1.txt";
 var arq2 = @"C:\Users\italo pessan\Desktop\Projeto\arquivo2.txt";
 
-FileInfo fileInfo = new FileInfo(arq1);
-fileInfo.CopyTo(arq2);
+string jsonCidades = JsonConvert.SerializeObject(cidades);
+File.WriteAllText(arq2, jsonCidades);
 
-string[] lines = File.ReadAllLines(arq1);
+//using (StreamWriter sw = new StreamWriter(arq2))
+//{
+//	foreach (var item in cidades)
+//	{
+//		sw.WriteLine(item);
+//	}
+//}
 
-foreach (string line in lines)
-{
-    Console.WriteLine(line);
-}
+
+
+//string[] lines = File.ReadAllLines(arq1);
+
+//foreach (string line in lines)
+//{
+//    Console.WriteLine(line);
+//}
 
 Console.ReadLine();
