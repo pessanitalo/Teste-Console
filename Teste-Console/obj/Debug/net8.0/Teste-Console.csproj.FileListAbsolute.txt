@@ -130,3 +130,4 @@ C:\Users\italo pessan\Desktop\git\Teste-Pratico-Console\Teste-Console\Teste-Cons
 C:\Users\italo pessan\Desktop\git\Teste-Pratico-Console\Teste-Console\Teste-Console\obj\Debug\net8.0\Teste-Console.genruntimeconfig.cache
 C:\Users\italo pessan\Desktop\git\Teste-Pratico-Console\Teste-Console\Teste-Console\obj\Debug\net8.0\ref\Teste-Console.dll
 C:\Users\italo pessan\Desktop\git\Teste-Pratico-Console\Teste-Console\Teste-Console\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\italo pessan\Desktop\git\Teste-Pratico-Console\Teste-Console\Teste-Console\bin\Debug\net8.0\CsvHelper.dll

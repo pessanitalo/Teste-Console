@@ -1,9 +1,9 @@
 ﻿namespace Teste_Console.Models
 {
-    public class Estado
+    public class Estados
     {
         public int Id { get; set; }
-        public string Cidades { get; set; }
+        public string Estado { get; set; }
         public string Sigla { get; set; }
     }
 }
